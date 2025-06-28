@@ -1,6 +1,6 @@
 # Lab3Robotica-MotomanMH6
 
-##Integrantes:
+## Integrantes:
 - Isabella Mendoza Cáceres (Alias la jefa)
 - Andrés Santiago Cañón Porras
 

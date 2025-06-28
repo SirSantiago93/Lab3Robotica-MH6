@@ -36,7 +36,7 @@ El robot Motoman MH6 tiene dos posiciones predefinidas de “home” o inicio, q
     <td>
 
 <!-- Tabla de articulaciones -->
-<b>Configuración Home 2</b>  
+<b>Configuración Home 1 Teórica</b>  
 <table>
   <tr><th>Articulación</th><th>Valor</th></tr>
   <tr><td>S (J1)</td><td>0°</td></tr>
@@ -51,6 +51,7 @@ El robot Motoman MH6 tiene dos posiciones predefinidas de “home” o inicio, q
 <td>
 
 <!-- Imagen -->
+<b>Posición Home 1 Real</b>  
 <img src="https://github.com/user-attachments/assets/2749bf67-a303-4964-bd96-9485ca865b09" alt="Home 2 Image" width="450"/>
 
 </td>
@@ -59,10 +60,48 @@ El robot Motoman MH6 tiene dos posiciones predefinidas de “home” o inicio, q
 </div>
 
 **Descripción:**  
-El brazo del robot se encuentra replegado hacia su base, ocupando un espacio más compacto. Es útil para almacenamiento, transporte o mantenimiento del robot sin riesgo de colisiones.
+El brazo del robot se encuentra replegado hacia su base, ocupando un espacio más compacto. Según los valores mostrados en el teach pendant, la configuración real usada como Home 1 en el robot es diferente de  +90° / -90° . Esto puede deberse a ajustes hechos en la programación por el integrador para evitar singularidades, colisiones o por razones prácticas del layout. Se tiene que esta posición es útil para almacenamiento, transporte o mantenimiento del robot sin riesgo de colisiones.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/c269c4f7-9070-4549-8950-ec07ebfd28c5" alt="image" width="400" />
+</div>
+
+### Home 2 (posición extendida)
+
+<div align="center">
+<table>
+  <tr>
+    <td>
+
+<!-- Tabla de articulaciones -->
+<b>Configuración Home 2 Teórica</b>  
+<table>
+  <tr><th>Articulación</th><th>Valor</th></tr>
+  <tr><td>S (J1)</td><td>0°</td></tr>
+  <tr><td>L (J2)</td><td>0°</td></tr>
+  <tr><td>U (J3)</td><td>0°</td></tr>
+  <tr><td>R (J4)</td><td>0°</td></tr>
+  <tr><td>B (J5)</td><td>0°</td></tr>
+  <tr><td>T (J6)</td><td>0°</td></tr>
+</table>
+
+</td>
+<td>
+
+<!-- Imagen -->
+<b>Posición Home 2 Real</b>  
+<img src="https://github.com/user-attachments/assets/a13d11d1-1290-4309-8679-8591749c1133" alt="Home 2 Image" width="450"/>
+
+</td>
+</tr>
+</table>
+</div>
+
+**Descripción:**  
+El robot se encuentra completamente extendido hacia el frente. Esta configuración no es exactamente la teórica Home 2 estándar, en su lugar se observa una posición casi centralizada, pero con leves desviaciones en los ejes L, U, B y T. Lo anterior se puede deber para evitar pequeñas oscilaciones, tolerancias mecánicas o ajustar a una posición de descanso natural del brazo así como evitar errores por desfase en sensores. Esta configuración es simétrica y neutral, ideal para iniciar tareas con visibilidad total del espacio de trabajo y sin interferencias.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/0bcc3907-70be-4900-9db4-06915641d8c1" alt="image" width="400" />
 </div>
 
 ---

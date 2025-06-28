@@ -64,8 +64,7 @@ Dentro de las principales funcionalidades de RoboDK se encuentran:
    - El software genera automáticamente el código nativo que el robot entiende, dependiendo del fabricante (en este caso, código INFORM para Motoman).
 
 3. **Postprocesamiento automático**
-   - RoboDK convierte los movimientos definidos en la simulación a instrucciones específicas del lenguaje del controlador Motoman (INFORM).
-   - Esto permite transferir fácilmente el programa al robot real mediante archivo o conexión directa.
+   - RoboDK convierte los movimientos definidos en la simulación a instrucciones específicas del lenguaje del controlador Motoman (INFORM). Esto permite transferir fácilmente el programa al robot real mediante archivo o conexión directa.
 
 4. **Generación de trayectorias a partir de CAD/CAM**
    - Es posible importar archivos de modelos 3D (como STEP o STL) y generar automáticamente trayectorias para tareas como pintura, soldadura o mecanizado.

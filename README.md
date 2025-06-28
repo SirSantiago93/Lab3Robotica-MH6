@@ -109,45 +109,6 @@ El robot se encuentra completamente extendido hacia el frente. Esta configuraci�
 La elección entre Home 1 y Home 2 depende del objetivo. **Home 1** es más adecuado para arranques seguros, ahorro de espacio y transporte o mantenimiento. Mientras que **Home 2** es más adecuado para programación de trayectorias, calibrar posiciones, recuperar errores y comprobar colisiones o límites de movimiento.
 
 ---
-
-## Niveles de Velocidad en Movimiento Manual - Motoman MH6
-
-Cuando el operador mueve el robot manualmente (modo **JOG**), se utilizan *niveles de velocidad predeterminados* para controlar cuán rápido se moverán las articulaciones o el TCP (Tool Center Point).
-
-Estos niveles permiten:
-- Aumentar o reducir la precisión del movimiento.
-- Prevenir movimientos peligrosos durante programación o ajustes.
-- Ajustar la velocidad según la tarea: posicionamiento fino o desplazamiento largo.
-
-### Niveles de velocidad disponibles
-
-Los niveles pueden variar ligeramente según el modelo de controlador, pero normalmente son:
-
-| Nivel | Descripción              | Velocidad aprox. (puede variar) |
-|-------|--------------------------|----------------------------------|
-| **1** | Muy lento / ajuste fino  | ~1% – 5%                         |
-| **2** | Lento                    | ~10% – 20%                       |
-| **3** | Medio                    | ~30% – 50%                       |
-| **4** | Rápido                   | ~75%                             |
-| **5** | Máximo                   | 100%                             |
-
-La velocidad no solo depende del nivel seleccionado, sino también del tipo de movimiento (ejes individuales, coordenadas cartesianas, etc.) y de la carga. Se puede cambiar el nivel de velocidad directamente desde el **teach pendant**, siguiendo estos pasos:
-
-1. Estar en **modo JOG** (presionar el botón "JOG").
-2. Presionar el botón físico o virtual con el ícono de **velocidad** (`%`) o la etiqueta `STEP`.
-3. Usar las teclas de **flecha arriba/abajo** o los **botones de selección de velocidad** en pantalla para subir o bajar el nivel.
-4. El cambio se aplica de inmediato y afecta todos los movimientos manuales.
-
->  Algunos modelos también permiten presionar botones como `STEP SELECT` o `SPEED` dependiendo del software del teach pendant.
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/49c7d332-4a73-4a5e-b025-ce7f0b7797e9" alt="image" width="400" />
-</div>
-
-Se reconoce en qué valor de velocidad se encuentra debido a que en la parte superior o lateral del teach pendant, se muestra el **ícono o campo de velocidad actual**, normalmente con un número (ej: `STEP 3`, `SPEED 50%`, etc.).
-
-
----
 ## Procedimiento para realizar movimientos manuales
 
 Para iniciar el proceso, el operador debe encender el controlador del robot y esperar a que el sistema complete su arranque. Una vez activo, se debe verificar que el teach pendant esté encendido y que el robot se encuentre libre de errores o alarmas. A continuación, el operador debe asegurarse de que el robot esté configurado en **modo Teach**, lo que permitirá realizar movimientos manuales de manera segura. Este modo puede ser activado desde un selector físico en el panel de control o desde el menú del teach pendant.
@@ -176,6 +137,43 @@ En **modo cartesiano**, las teclas permiten mover el extremo del brazo robótico
 - Para rotaciones: se utilizan `+RX`, `-RX`, `+RY`, `-RY`, `+RZ`, `-RZ`.
 
 En todos los casos, es obligatorio mantener presionado el botón de habilitación (`ENABLE`) ubicado en la parte trasera del teach pendant mientras se ejecutan los movimientos. Esto es un mecanismo de seguridad que garantiza que los movimientos solo ocurran mientras el operador tiene control activo del robot.
+
+---
+
+## Niveles de Velocidad en Movimiento Manual - Motoman MH6
+
+Cuando el operador mueve el robot manualmente (modo **JOG**), se utilizan *niveles de velocidad predeterminados* para controlar cuán rápido se moverán las articulaciones o el TCP (Tool Center Point).
+
+Estos niveles permiten:
+- Aumentar o reducir la precisión del movimiento.
+- Prevenir movimientos peligrosos durante programación o ajustes.
+- Ajustar la velocidad según la tarea: posicionamiento fino o desplazamiento largo.
+
+### Niveles de velocidad disponibles
+
+Los niveles pueden variar ligeramente según el modelo de controlador, pero normalmente son:
+
+| Nivel | Descripción              | Velocidad aprox. (puede variar) |
+|-------|--------------------------|----------------------------------|
+| **1** | Muy lento / ajuste fino  | ~1% – 5%                         |
+| **2** | Lento                    | ~10% – 20%                       |
+| **3** | Medio                    | ~30% – 50%                       |
+| **4** | Rápido                   | ~75%                             |
+| **5** | Máximo                   | 100%                             |
+
+El robot Motoman MH6 tiene la capacidad de operar a diferentes niveles de velocidad, permitiendo ajustar su rendimiento según las necesidades específicas de la tarea. Se puede modificar la velocidad de cada eje individualmente, variando entre un 1% y un 200% de la velocidad nominal. La velocidad no solo depende del nivel seleccionado, sino también del tipo de movimiento (ejes individuales, coordenadas cartesianas, etc.) y de la carga. Se puede cambiar el nivel de velocidad directamente desde el **teach pendant**, siguiendo estos pasos:
+
+1. Estar en **modo JOG** (presionar el botón "JOG").
+2. Presionar el botón físico o virtual con el ícono de **velocidad** (`%`) o la etiqueta `STEP`.
+3. Usar las teclas de **flecha arriba/abajo** o los **botones de selección de velocidad** en pantalla para subir o bajar el nivel.
+4. El cambio se aplica de inmediato y afecta todos los movimientos manuales.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/49c7d332-4a73-4a5e-b025-ce7f0b7797e9" alt="image" width="400" />
+</div>
+
+Se reconoce en qué valor de velocidad se encuentra debido a que en la parte superior lateral derecho del teach pendant, se muestra el **ícono o campo de velocidad actual**, normalmente con un número (ej: `STEP 3`, `SPEED 50%`, etc.).
+
 
 ## Descripción de las funcionalidades de RoboDK y su comunicación con el Motoman MH6
 

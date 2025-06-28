@@ -51,7 +51,7 @@ El robot Motoman MH6 tiene dos posiciones predefinidas de “home” o inicio, q
 <td>
 
 <!-- Imagen -->
-<img src="https://github.com/user-attachments/assets/2749bf67-a303-4964-bd96-9485ca865b09" alt="Home 2 Image" width="300"/>
+<img src="https://github.com/user-attachments/assets/2749bf67-a303-4964-bd96-9485ca865b09" alt="Home 2 Image" width="450"/>
 
 </td>
 </tr>

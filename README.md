@@ -74,12 +74,12 @@ Dentro de las principales funcionalidades de RoboDK se encuentran:
 
 Para que RoboDK pueda comunicarse y ejecutar movimientos en el **Motoman MH6**, se utilizan dos métodos principales:
 
-#### 1. **Transferencia por archivo**
+1. **Transferencia por archivo**
 - RoboDK genera archivos de programa en formato **.JBI** (formato INFORM de Motoman).
 - Estos archivos se transfieren al controlador DX100/DX200 mediante una memoria USB o por red (FTP).
 - Una vez en el controlador, el operador puede ejecutar el programa desde el teach pendant.
 
-#### 2. **Comunicación directa (online programming)**
+2. **Comunicación directa (online programming)**
 - También es posible establecer una conexión directa entre RoboDK y el robot a través de **Ethernet**, usando el protocolo **MotoCom SDK** o mediante API de RoboDK si está configurado.
 - Esto permite enviar comandos en tiempo real, monitorear el estado del robot y hacer ajustes sin necesidad de generar archivos.
 

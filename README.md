@@ -24,6 +24,8 @@ La selección del robot adecuado depende de factores como la carga que puede lev
 | **Software**                | RoboDK, MotoSim, MotoPlus                    | RobotStudio, RAPID (lenguaje de programación de ABB) |
 | **Condiciones de trabajo**  | 0–45 °C, humedad sin condensación            | 5–45 °C, humedad hasta 95% sin condensación  |
 
+---
+
 ## Descripción de las configuraciones home1 y home2 del Motoman MH6
 
 El robot Motoman MH6 tiene dos posiciones predefinidas de “home” o inicio, que son utilizadas como referencia para programación, calibración o recuperación. Cada una define un conjunto específico de valores para las seis articulaciones del robot (ejes S, L, U, R, B y T). Las posiciones típicas son las siguientes:
@@ -97,8 +99,6 @@ El brazo del robot se encuentra replegado hacia su base, ocupando un espacio má
 </table>
 </div>
 
-La elección entre Home 1 y Home 2 depende del objetivo. **Home 1** es más adecuado para arranques seguros, ahorro de espacio y transporte o mantenimiento. Mientras que **Home 2** es más adecuado para programación de trayectorias, calibrar posiciones, recuperar errores y comprobar colisiones o límites de movimiento.
-
 **Descripción:**  
 El robot se encuentra completamente extendido hacia el frente. Esta configuración no es exactamente la teórica Home 2 estándar, en su lugar se observa una posición casi centralizada, pero con leves desviaciones en los ejes L, U, B y T. Lo anterior se puede deber para evitar pequeñas oscilaciones, tolerancias mecánicas o ajustar a una posición de descanso natural del brazo así como evitar errores por desfase en sensores. Esta configuración es simétrica y neutral, ideal para iniciar tareas con visibilidad total del espacio de trabajo y sin interferencias.
 
@@ -106,8 +106,49 @@ El robot se encuentra completamente extendido hacia el frente. Esta configuraci�
   <img src="https://github.com/user-attachments/assets/0bcc3907-70be-4900-9db4-06915641d8c1" alt="image" width="400" />
 </div>
 
+La elección entre Home 1 y Home 2 depende del objetivo. **Home 1** es más adecuado para arranques seguros, ahorro de espacio y transporte o mantenimiento. Mientras que **Home 2** es más adecuado para programación de trayectorias, calibrar posiciones, recuperar errores y comprobar colisiones o límites de movimiento.
+
 ---
 
+## Niveles de Velocidad en Movimiento Manual - Motoman MH6
+
+Cuando el operador mueve el robot manualmente (modo **JOG**), se utilizan *niveles de velocidad predeterminados* para controlar cuán rápido se moverán las articulaciones o el TCP (Tool Center Point).
+
+Estos niveles permiten:
+- Aumentar o reducir la precisión del movimiento.
+- Prevenir movimientos peligrosos durante programación o ajustes.
+- Ajustar la velocidad según la tarea: posicionamiento fino o desplazamiento largo.
+
+### Niveles de velocidad disponibles
+
+Los niveles pueden variar ligeramente según el modelo de controlador, pero normalmente son:
+
+| Nivel | Descripción              | Velocidad aprox. (puede variar) |
+|-------|--------------------------|----------------------------------|
+| **1** | Muy lento / ajuste fino  | ~1% – 5%                         |
+| **2** | Lento                    | ~10% – 20%                       |
+| **3** | Medio                    | ~30% – 50%                       |
+| **4** | Rápido                   | ~75%                             |
+| **5** | Máximo                   | 100%                             |
+
+La velocidad no solo depende del nivel seleccionado, sino también del tipo de movimiento (ejes individuales, coordenadas cartesianas, etc.) y de la carga. Se puede cambiar el nivel de velocidad directamente desde el **teach pendant**, siguiendo estos pasos:
+
+1. Estar en **modo JOG** (presionar el botón "JOG").
+2. Presionar el botón físico o virtual con el ícono de **velocidad** (`%`) o la etiqueta `STEP`.
+3. Usar las teclas de **flecha arriba/abajo** o los **botones de selección de velocidad** en pantalla para subir o bajar el nivel.
+4. El cambio se aplica de inmediato y afecta todos los movimientos manuales.
+
+>  Algunos modelos también permiten presionar botones como `STEP SELECT` o `SPEED` dependiendo del software del teach pendant.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/49c7d332-4a73-4a5e-b025-ce7f0b7797e9" alt="image" width="400" />
+</div>
+
+En la parte superior o lateral del teach pendant, se muestra el **ícono o campo de velocidad actual**, normalmente con un número (ej: `STEP 3`, `SPEED 50%`, etc.).
+
+
+
+---
 ## Procedimiento para realizar movimientos manuales
 
 Para iniciar el proceso, el operador debe encender el controlador del robot y esperar a que el sistema complete su arranque. Una vez activo, se debe verificar que el teach pendant esté encendido y que el robot se encuentre libre de errores o alarmas. A continuación, el operador debe asegurarse de que el robot esté configurado en **modo Teach**, lo que permitirá realizar movimientos manuales de manera segura. Este modo puede ser activado desde un selector físico en el panel de control o desde el menú del teach pendant.

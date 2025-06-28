@@ -43,6 +43,8 @@ Para cambiar entre estos modos, se debe presionar el botón `COORD` en el teach 
 
 Una vez seleccionado el modo de movimiento adecuado, el operador puede proceder a controlar el robot manualmente.
 
+<img src="https://github.com/user-attachments/assets/11532df0-4f8d-4a3f-94bf-b50620244bbe" alt="image" width="400"/>
+
 En **modo articulado**, se utilizan las teclas del teach pendant correspondientes a cada eje (por ejemplo, `S`, `L`, `U`, `R`, `B`, `T`) para mover individualmente las articulaciones del robot. Cada tecla tiene asociada una dirección positiva (`+`) y negativa (`-`), lo que permite realizar giros o desplazamientos en ambos sentidos.
 
 En **modo cartesiano**, las teclas permiten mover el extremo del brazo robótico (el efector final) de forma lineal o rotacional en el espacio:

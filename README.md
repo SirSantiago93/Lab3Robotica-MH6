@@ -91,3 +91,24 @@ La segunda opción es la **comunicación directa o en línea**, que permite esta
 5. Finalmente, el robot ejecuta la secuencia programada tal como fue simulada.
 
 Esta metodología no solo facilita la interoperabilidad, sino que tambiente reduce el tiempo de programación en el sitio, mejora la precisión y permite realizar pruebas y optimizaciones sin detener la línea de producción.
+
+## Análisis comparativo entre RoboDK y RobotStudio
+
+A continuación, se presenta una tabla comparativa entre RoboDK y RobotStudio, destacando sus principales características, ventajas, limitaciones y aplicaciones. Esta comparación permite entender en qué contextos es más conveniente utilizar cada herramienta según las necesidades del usuario o del entorno industrial.
+
+| **Criterio**               | **RoboDK**                                                                                 | **RobotStudio**                                                                              |
+|---------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| **Compatibilidad**         | Multimarca (Motoman, ABB, KUKA, FANUC, UR, etc.)                                           | Exclusivo para robots ABB                                                                   |
+| **Lenguaje de programación** | Python (externo) y lenguaje propio interno simplificado                                     | RAPID (lenguaje oficial de ABB)                                                             |
+| **Facilidad de uso**       | Interfaz intuitiva, curva de aprendizaje baja                                              | Requiere conocimientos técnicos y dominio de RAPID                                          |
+| **Precisión de simulación**| Alta (depende del postprocesador y configuración)                                          | Muy alta (emulación exacta del controlador IRC5)                                            |
+| **Importación CAD/CAM**    | Soporte directo para archivos STEP, STL, DXF, G-code                                       | Soporte CAD limitado, más enfocado en programación RAPID                                    |
+| **Programación offline**   | Sí                                                                                         | Sí                                                                                          |
+| **Programación en tiempo real** | Sí, mediante conexión Ethernet o MotoCom (según marca y configuración)                   | Sí, con conexión directa al robot ABB                                                       |
+| **Postprocesadores**       | Personalizables por marca y modelo                                                         | Nativo, exclusivo para ABB                                                                  |
+| **Aplicaciones típicas**   | Simulación con robots diversos, automatización educativa, generación desde CAD, tareas generales | Simulación avanzada con robots ABB, configuración de celdas ABB, pruebas virtuales de ciclos |
+| **Ventajas**               | - Soporte para múltiples marcas<br>- Integración con Python<br>- Fácil de usar             | - Emulación real del robot<br>- Precisión total<br>- Herramientas avanzadas para ABB        |
+| **Limitaciones**           | - Menor precisión si no se ajustan los parámetros correctamente<br>- No emula controladores reales | - Solo funciona con robots ABB<br>- Requiere formación técnica especializada                |
+
+En conclusión RoboDK es una opción versátil y accesible para entornos mixtos o educativos, mientras que RobotStudio ofrece un entorno profesional altamente preciso para la simulación y programación exclusiva de robots ABB. La elección dependerá del fabricante del robot y del nivel de fidelidad requerido en la simulación.
+

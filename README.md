@@ -122,3 +122,5 @@ A continuación, se presenta una comparativa entre RoboDK y RobotStudio, destaca
 
 En retrospectiva RoboDK es una opción versátil y accesible para entornos mixtos o educativos, mientras que RobotStudio ofrece un entorno profesional altamente preciso para la simulación y programación exclusiva de robots ABB. La elección dependerá del fabricante del robot y del nivel de fidelidad requerido en la simulación.
 
+## Video de la práctica
+[![Alt text](https://img.youtube.com/vi/eSCXMVGORic/0.jpg)](https://www.youtube.com/watch?v=eSCXMVGORic)

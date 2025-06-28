@@ -48,3 +48,54 @@ En **modo cartesiano**, las teclas permiten mover el extremo del brazo robótico
 - Para rotaciones: se utilizan `+RX`, `-RX`, `+RY`, `-RY`, `+RZ`, `-RZ`.
 
 En todos los casos, es obligatorio mantener presionado el botón de habilitación (`ENABLE`) ubicado en la parte trasera del teach pendant mientras se ejecutan los movimientos. Esto es un mecanismo de seguridad que garantiza que los movimientos solo ocurran mientras el operador tiene control activo del robot.
+
+## Descripción de las funcionalidades de RoboDK y su comunicación con el Motoman MH6
+
+RoboDK es una herramienta de simulación y programación offline de robots industriales que permite diseñar, validar y ejecutar trayectorias sin necesidad de usar directamente el robot físico. Es compatible con una amplia gama de marcas, incluyendo Yaskawa Motoman, lo que facilita el desarrollo y la integración de procesos automatizados como soldadura, paletizado, fresado, ensamblaje, entre otros.
+
+### Principales funcionalidades de RoboDK
+
+1. **Simulación 3D del entorno de trabajo**
+   - Permite crear una celda robótica virtual que incluye el robot Motoman MH6, herramientas, transportadores, sensores y piezas.
+   - Ayuda a visualizar y corregir trayectorias antes de transferirlas al robot real, reduciendo riesgos y tiempos de prueba.
+
+2. **Programación offline (sin conexión directa al robot)**
+   - Se pueden programar trayectorias y movimientos mediante una interfaz gráfica o mediante scripts en Python.
+   - El software genera automáticamente el código nativo que el robot entiende, dependiendo del fabricante (en este caso, código INFORM para Motoman).
+
+3. **Postprocesamiento automático**
+   - RoboDK convierte los movimientos definidos en la simulación a instrucciones específicas del lenguaje del controlador Motoman (INFORM).
+   - Esto permite transferir fácilmente el programa al robot real mediante archivo o conexión directa.
+
+4. **Generación de trayectorias a partir de CAD/CAM**
+   - Es posible importar archivos de modelos 3D (como STEP o STL) y generar automáticamente trayectorias para tareas como pintura, soldadura o mecanizado.
+
+5. **Programación con Python**
+   - RoboDK permite extender sus funcionalidades mediante scripts en Python, lo que habilita tareas personalizadas como lógica de control, comunicación con sensores o interacción con otros sistemas.
+
+### Comunicación entre RoboDK y el robot Motoman
+
+Para que RoboDK pueda ejecutar movimientos en un **robot Motoman MH6**, se utilizan dos métodos principales:
+
+#### 1. **Transferencia por archivo**
+- RoboDK genera archivos de programa en formato **.JBI** (formato INFORM de Motoman).
+- Estos archivos se transfieren al controlador DX100/DX200 mediante una memoria USB o por red (FTP).
+- Una vez en el controlador, el operador puede ejecutar el programa desde el teach pendant.
+
+#### 2. **Comunicación directa (online programming)**
+- También es posible establecer una conexión directa entre RoboDK y el robot a través de **Ethernet**, usando el protocolo **MotoCom SDK** o mediante API de RoboDK si está configurado.
+- Esto permite enviar comandos en tiempo real, monitorear el estado del robot y hacer ajustes sin necesidad de generar archivos.
+
+> Nota: La comunicación en tiempo real requiere que el robot tenga habilitada la opción de comunicación remota y que esté correctamente configurada la red entre el PC y el controlador.
+
+---
+
+### Procesos que realiza RoboDK para ejecutar movimientos
+
+1. El usuario diseña la trayectoria en RoboDK, utilizando coordenadas cartesianas o movimientos relativos.
+2. El software simula el movimiento y detecta posibles colisiones o errores de alcance.
+3. Se selecciona el postprocesador adecuado (en este caso, Motoman INFORM) para generar el código del robot.
+4. Se transfiere el archivo al controlador del robot.
+5. Finalmente, el robot ejecuta la secuencia programada tal como fue simulada.
+
+Esta metodología reduce el tiempo de programación en el sitio, mejora la precisión y permite realizar pruebas y optimizaciones sin detener la línea de producción.

@@ -1,8 +1,8 @@
 # Lab3Robotica-MotomanMH6
 
-Integrantes:
+##Integrantes:
 - Isabella Mendoza Cáceres (Alias la jefa)
-- Andrés Santiago Cañón Porras (Alias el esclavito)
+- Andrés Santiago Cañón Porras
 
 ## Comparativa entre Motoman MH6 vs ABB IRB140
 

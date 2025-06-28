@@ -1,7 +1,7 @@
 # Lab3Robotica-MotomanMH6
 
 ## Integrantes:
-- Isabella Mendoza Cáceres (Alias la jefa)
+- Isabella Mendoza Cáceres
 - Andrés Santiago Cañón Porras
 
 ## Comparativa entre Motoman MH6 vs ABB IRB140
@@ -96,6 +96,8 @@ El brazo del robot se encuentra replegado hacia su base, ocupando un espacio má
 </tr>
 </table>
 </div>
+
+La elección entre Home 1 y Home 2 depende del objetivo. **Home 1** es más adecuado para arranques seguros, ahorro de espacio y transporte o mantenimiento. Mientras que **Home 2** es más adecuado para programación de trayectorias, calibrar posiciones, recuperar errores y comprobar colisiones o límites de movimiento.
 
 **Descripción:**  
 El robot se encuentra completamente extendido hacia el frente. Esta configuración no es exactamente la teórica Home 2 estándar, en su lugar se observa una posición casi centralizada, pero con leves desviaciones en los ejes L, U, B y T. Lo anterior se puede deber para evitar pequeñas oscilaciones, tolerancias mecánicas o ajustar a una posición de descanso natural del brazo así como evitar errores por desfase en sensores. Esta configuración es simétrica y neutral, ideal para iniciar tareas con visibilidad total del espacio de trabajo y sin interferencias.

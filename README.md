@@ -53,7 +53,7 @@ En todos los casos, es obligatorio mantener presionado el botón de habilitació
 
 RoboDK es una herramienta de simulación y programación offline de robots industriales que permite diseñar, validar y ejecutar trayectorias sin necesidad de usar directamente el robot físico. Es compatible con una amplia gama de marcas, incluyendo Yaskawa Motoman, lo que facilita el desarrollo y la integración de procesos automatizados como soldadura, paletizado, fresado, ensamblaje, entre otros.
 
-### Principales funcionalidades de RoboDK
+Dentro de las principales funcionalidades de RoboDK se encuentran:
 
 1. **Simulación 3D del entorno de trabajo**
    - Permite crear una celda robótica virtual que incluye el robot Motoman MH6, herramientas, transportadores, sensores y piezas.
@@ -87,8 +87,6 @@ Para que RoboDK pueda ejecutar movimientos en un **robot Motoman MH6**, se utili
 - Esto permite enviar comandos en tiempo real, monitorear el estado del robot y hacer ajustes sin necesidad de generar archivos.
 
 > Nota: La comunicación en tiempo real requiere que el robot tenga habilitada la opción de comunicación remota y que esté correctamente configurada la red entre el PC y el controlador.
-
----
 
 ### Procesos que realiza RoboDK para ejecutar movimientos
 

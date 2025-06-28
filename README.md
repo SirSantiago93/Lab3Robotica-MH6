@@ -93,4 +93,4 @@ Para que RoboDK pueda comunicarse y ejecutar movimientos en el **Motoman MH6**, 
 4. Se transfiere el archivo al controlador del robot.
 5. Finalmente, el robot ejecuta la secuencia programada tal como fue simulada.
 
-Esta metodología reduce el tiempo de programación en el sitio, mejora la precisión y permite realizar pruebas y optimizaciones sin detener la línea de producción.
+Esta metodología no solo facilita la interoperabilidad, sino que tambiente reduce el tiempo de programación en el sitio, mejora la precisión y permite realizar pruebas y optimizaciones sin detener la línea de producción.

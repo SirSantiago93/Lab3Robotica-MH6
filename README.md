@@ -144,8 +144,7 @@ La velocidad no solo depende del nivel seleccionado, sino también del tipo de m
   <img src="https://github.com/user-attachments/assets/49c7d332-4a73-4a5e-b025-ce7f0b7797e9" alt="image" width="400" />
 </div>
 
-En la parte superior o lateral del teach pendant, se muestra el **ícono o campo de velocidad actual**, normalmente con un número (ej: `STEP 3`, `SPEED 50%`, etc.).
-
+Se reconoce en qué valor de velocidad se encuentra debido a que en la parte superior o lateral del teach pendant, se muestra el **ícono o campo de velocidad actual**, normalmente con un número (ej: `STEP 3`, `SPEED 50%`, etc.).
 
 
 ---

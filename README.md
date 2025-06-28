@@ -85,7 +85,7 @@ La segunda opción es la **comunicación directa o en línea**, que permite esta
 
 > Nota: La comunicación en tiempo real requiere que el robot tenga habilitada la opción de comunicación remota y que esté correctamente configurada la red entre el PC y el controlador.
 
-### Procesos que realiza RoboDK para ejecutar movimientos
+RoboDK realiza los siguientes procesos para ejecutar movimientos:
 
 1. El usuario diseña la trayectoria en RoboDK, utilizando coordenadas cartesianas o movimientos relativos.
 2. El software simula el movimiento y detecta posibles colisiones o errores de alcance.

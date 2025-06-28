@@ -39,9 +39,12 @@ El robot Motoman MH6 tiene dos posiciones predefinidas de “home” o inicio, q
 | B (J5)       | 0°    |
 | T (J6)       | 0°    |
 
+![Home1Posiciones](https://github.com/user-attachments/assets/2749bf67-a303-4964-bd96-9485ca865b09)
 
 **Descripción:**  
 El brazo del robot se encuentra replegado hacia su base, ocupando un espacio más compacto. Es útil para almacenamiento, transporte o mantenimiento del robot sin riesgo de colisiones.
+
+![Home1](https://github.com/user-attachments/assets/c269c4f7-9070-4549-8950-ec07ebfd28c5)
 
 ---
 

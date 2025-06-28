@@ -24,8 +24,26 @@ La selección del robot adecuado depende de factores como la carga que puede lev
 | **Software**                | RoboDK, MotoSim, MotoPlus                    | RobotStudio, RAPID (lenguaje de programación de ABB) |
 | **Condiciones de trabajo**  | 0–45 °C, humedad sin condensación            | 5–45 °C, humedad hasta 95% sin condensación  |
 
+## Descripción de las configuraciones home1 y home2 del Motoman MH6
+
+El robot Motoman MH6 tiene dos posiciones predefinidas de “home” o inicio, que son utilizadas como referencia para programación, calibración o recuperación. Cada una define un conjunto específico de valores para las seis articulaciones del robot (ejes S, L, U, R, B y T). Las posiciones típicas son las siguientes:
+
+### Home 1 (posición recogida)
+
+| Articulación | Valor |
+|--------------|-------|
+| S (J1)       | 0°    |
+| L (J2)       | +90°  |
+| U (J3)       | –90°  |
+| R (J4)       | 0°    |
+| B (J5)       | 0°    |
+| T (J6)       | 0°    |
 
 
+**Descripción:**  
+El brazo del robot se encuentra replegado hacia su base, ocupando un espacio más compacto. Es útil para almacenamiento, transporte o mantenimiento del robot sin riesgo de colisiones.
+
+---
 
 ## Procedimiento para realizar movimientos manuales
 

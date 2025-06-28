@@ -20,6 +20,9 @@ La selección del robot adecuado depende de factores como la carga que puede lev
 | **Software**                | RoboDK, MotoSim, MotoPlus                    | RobotStudio, RAPID (lenguaje de programación de ABB) |
 | **Condiciones de trabajo**  | 0–45 °C, humedad sin condensación            | 5–45 °C, humedad hasta 95% sin condensación  |
 
+
+
+
 ## Procedimiento para realizar movimientos manuales
 
 Para iniciar el proceso, el operador debe encender el controlador del robot y esperar a que el sistema complete su arranque. Una vez activo, se debe verificar que el teach pendant esté encendido y que el robot se encuentre libre de errores o alarmas. A continuación, el operador debe asegurarse de que el robot esté configurado en **modo Teach**, lo que permitirá realizar movimientos manuales de manera segura. Este modo puede ser activado desde un selector físico en el panel de control o desde el menú del teach pendant.
@@ -92,7 +95,10 @@ La segunda opción es la **comunicación directa o en línea**, que permite esta
 
 Esta metodología no solo facilita la interoperabilidad, sino que tambiente reduce el tiempo de programación en el sitio, mejora la precisión y permite realizar pruebas y optimizaciones sin detener la línea de producción.
 
-## Análisis comparativo entre RoboDK y RobotStudio
+
+
+
+## Comparativa entre RoboDK y RobotStudio
 
 A continuación, se presenta una comparativa entre RoboDK y RobotStudio, destacando sus principales características, ventajas, limitaciones y aplicaciones. Esta comparación permite entender en qué contextos es más conveniente utilizar cada herramienta según las necesidades del usuario o del entorno industrial.
 

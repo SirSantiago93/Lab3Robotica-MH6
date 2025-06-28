@@ -22,11 +22,7 @@ La selección del robot adecuado depende de factores como la carga que puede lev
 
 ## Procedimiento para realizar movimientos manuales
 
-### 1. Encendido del robot y preparación
-
 Para iniciar el proceso, el operador debe encender el controlador del robot y esperar a que el sistema complete su arranque. Una vez activo, se debe verificar que el teach pendant esté encendido y que el robot se encuentre libre de errores o alarmas. A continuación, el operador debe asegurarse de que el robot esté configurado en **modo Teach**, lo que permitirá realizar movimientos manuales de manera segura. Este modo puede ser activado desde un selector físico en el panel de control o desde el menú del teach pendant.
-
-### 2. Selección del modo de movimiento
 
 El operador puede controlar manualmente el robot en dos modos principales:
 
@@ -38,8 +34,6 @@ Para cambiar entre estos modos, se debe presionar el botón `COORD` en el teach 
 - `BASE` o `WORLD` para coordenadas relativas a la base del robot,
 - `TOOL` para coordenadas relativas a la herramienta,
 - `USER` si se ha definido un sistema de coordenadas personalizado.
-
-### 3. Realización de movimientos manuales
 
 Una vez seleccionado el modo de movimiento adecuado, el operador puede proceder a controlar el robot manualmente.
 

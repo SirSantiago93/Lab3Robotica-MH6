@@ -24,7 +24,6 @@ La selección del robot adecuado depende de factores como la carga que puede lev
 | **Software**                | RoboDK, MotoSim, MotoPlus                    | RobotStudio, RAPID (lenguaje de programación de ABB) |
 | **Condiciones de trabajo**  | 0–45 °C, humedad sin condensación            | 5–45 °C, humedad hasta 95% sin condensación  |
 
----
 
 ## Descripción de las configuraciones home1 y home2 del Motoman MH6
 
@@ -108,7 +107,7 @@ El robot se encuentra completamente extendido hacia el frente. Esta configuraci�
 
 La elección entre Home 1 y Home 2 depende del objetivo. **Home 1** es más adecuado para arranques seguros, ahorro de espacio y transporte o mantenimiento. Mientras que **Home 2** es más adecuado para programación de trayectorias, calibrar posiciones, recuperar errores y comprobar colisiones o límites de movimiento.
 
----
+
 ## Procedimiento para realizar movimientos manuales
 
 Para iniciar el proceso, el operador debe encender el controlador del robot y esperar a que el sistema complete su arranque. Una vez activo, se debe verificar que el teach pendant esté encendido y que el robot se encuentre libre de errores o alarmas. A continuación, el operador debe asegurarse de que el robot esté configurado en **modo Teach**, lo que permitirá realizar movimientos manuales de manera segura. Este modo puede ser activado desde un selector físico en el panel de control o desde el menú del teach pendant.
@@ -138,7 +137,6 @@ En **modo cartesiano**, las teclas permiten mover el extremo del brazo robótico
 
 En todos los casos, es obligatorio mantener presionado el botón de habilitación (`ENABLE`) ubicado en la parte trasera del teach pendant mientras se ejecutan los movimientos. Esto es un mecanismo de seguridad que garantiza que los movimientos solo ocurran mientras el operador tiene control activo del robot.
 
----
 
 ## Niveles de Velocidad en Movimiento Manual - Motoman MH6
 
@@ -217,8 +215,6 @@ RoboDK realiza los siguientes procesos para ejecutar movimientos:
 5. Finalmente, el robot ejecuta la secuencia programada tal como fue simulada.
 
 Esta metodología no solo facilita la interoperabilidad, sino que tambiente reduce el tiempo de programación en el sitio, mejora la precisión y permite realizar pruebas y optimizaciones sin detener la línea de producción.
-
-
 
 
 ## Comparativa entre RoboDK y RobotStudio

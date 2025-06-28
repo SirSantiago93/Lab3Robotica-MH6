@@ -2,7 +2,7 @@
 
 ## Comparativa entre Motoman MH6 vs ABB IRB140
 
-En el mundo de la automatización industrial, la selección del robot adecuado depende de factores como la carga que puede levantar, el espacio que necesita para operar, la velocidad de sus movimientos y sus aplicaciones principales. A continuación, se presenta una comparación entre dos robots ampliamente utilizados en la industria: el **Motoman MH6** de Yaskawa y el **ABB IRB 140**. Ambos modelos son versátiles, compactos y adecuados para tareas de manipulación, ensamblaje y automatización de procesos, aunque presentan diferencias clave que pueden hacer que uno se adapte mejor a ciertas necesidades específicas.
+En el mundo de la automatización industrial, la selección del robot adecuado depende de factores como la carga que puede levantar, el espacio que necesita para operar, la velocidad de sus movimientos y sus aplicaciones principales. Se presenta una comparación entre dos robots ampliamente utilizados en la industria: el **Motoman MH6** de Yaskawa y el **ABB IRB 140**. Ambos modelos son versátiles, compactos y adecuados para tareas de manipulación, ensamblaje y automatización de procesos, aunque presentan diferencias clave que pueden hacer que uno se adapte mejor a ciertas necesidades específicas.
 
 | Característica                | **Motoman MH6**                              | **ABB IRB 140**                              |
 |-----------------------------|----------------------------------------------|----------------------------------------------|

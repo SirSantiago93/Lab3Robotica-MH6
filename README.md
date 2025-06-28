@@ -22,8 +22,6 @@ La selección del robot adecuado depende de factores como la carga que puede lev
 
 ## Procedimiento para realizar movimientos manuales
 
-A continuación, se describe el procedimiento para ejecutar movimientos manuales en el robot Motoman MH6, incluyendo cómo cambiar entre modos de operación (articulaciones y cartesiano), y cómo realizar desplazamientos y rotaciones en los ejes X, Y y Z. Este proceso se realiza a través del teach pendant del robot, bajo supervisión y con las debidas precauciones de seguridad.
-
 ### 1. Encendido del robot y preparación
 
 Para iniciar el proceso, el operador debe encender el controlador del robot (DX100 o DX200, según el modelo) y esperar a que el sistema complete su arranque. Una vez activo, se debe verificar que el teach pendant esté encendido y que el robot se encuentre libre de errores o alarmas.

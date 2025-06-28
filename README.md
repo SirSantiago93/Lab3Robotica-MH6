@@ -72,7 +72,7 @@ Dentro de las principales funcionalidades de RoboDK se encuentran:
 5. **Programación con Python**
    - RoboDK permite extender sus funcionalidades mediante scripts en Python, lo que habilita tareas personalizadas como lógica de control, comunicación con sensores o interacción con otros sistemas.
 
-Para que RoboDK pueda comunicarse  ejecutar movimientos en el **Motoman MH6**, se utilizan dos métodos principales:
+Para que RoboDK pueda comunicarse y ejecutar movimientos en el **Motoman MH6**, se utilizan dos métodos principales:
 
 #### 1. **Transferencia por archivo**
 - RoboDK genera archivos de programa en formato **.JBI** (formato INFORM de Motoman).

@@ -30,19 +30,32 @@ El robot Motoman MH6 tiene dos posiciones predefinidas de “home” o inicio, q
 
 ### Home 1 (posición recogida)
 
-| Configuración Home 2            | Imagen referencial                           |
-|--------------------------------|-----------------------------------------------|
-|                                  
-| **Articulación** | **Valor**   | <div align="center">
-  <img src="https://github.com/user-attachments/assets/2749bf67-a303-4964-bd96-9485ca865b09" alt="image" width="400" />
-</div> |
-|------------------|-------------|                                               |
-| S (J1)           | 0°          |                                               |
-| L (J2)           | +90°        |                                               |
-| U (J3)           | –90°        |                                               |
-| R (J4)           | 0°          |                                               |
-| B (J5)           | 0°          |                                               |
-| T (J6)           | 0°          |                                               |
+<table>
+  <tr>
+    <td>
+
+<!-- Tabla de articulaciones -->
+<b>Configuración Home 2</b>  
+<table>
+  <tr><th>Articulación</th><th>Valor</th></tr>
+  <tr><td>S (J1)</td><td>0°</td></tr>
+  <tr><td>L (J2)</td><td>+90°</td></tr>
+  <tr><td>U (J3)</td><td>–90°</td></tr>
+  <tr><td>R (J4)</td><td>0°</td></tr>
+  <tr><td>B (J5)</td><td>0°</td></tr>
+  <tr><td>T (J6)</td><td>0°</td></tr>
+</table>
+
+</td>
+<td>
+
+<!-- Imagen -->
+<img src="https://github.com/user-attachments/assets/2749bf67-a303-4964-bd96-9485ca865b09" alt="Home 2 Image" width="300"/>
+
+</td>
+</tr>
+</table>
+
 
 **Descripción:**  
 El brazo del robot se encuentra replegado hacia su base, ocupando un espacio más compacto. Es útil para almacenamiento, transporte o mantenimiento del robot sin riesgo de colisiones.

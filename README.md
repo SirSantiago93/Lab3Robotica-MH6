@@ -4,7 +4,7 @@
 
 En el mundo de la automatización industrial, la selección del robot adecuado depende de factores como la carga que puede levantar, el espacio que necesita para operar, la velocidad de sus movimientos y sus aplicaciones principales. Se presenta una comparación entre dos robots ampliamente utilizados en la industria: el **Motoman MH6** de Yaskawa y el **ABB IRB 140**. Ambos modelos son versátiles, compactos y adecuados para tareas de manipulación, ensamblaje y automatización de procesos, aunque presentan diferencias clave que pueden hacer que uno se adapte mejor a ciertas necesidades específicas.
 
-| Característica                | **Motoman MH6**                              | **ABB IRB 140**                              |
+| Característica                | **Motoman MH6**                              | **ABB IRB140**                              |
 |-----------------------------|----------------------------------------------|----------------------------------------------|
 | **Marca**                   | Yaskawa Motoman                              | ABB Robotics                                 |
 | **Carga máxima**            | 6 kg                                         | 6 kg                                         |
@@ -17,6 +17,6 @@ En el mundo de la automatización industrial, la selección del robot adecuado d
 | **Aplicaciones comunes**    | Soldadura, ensamblaje, paletizado, manipulación | Ensamblaje, alimentación de máquinas, embalaje, prueba de componentes |
 | **Protección ambiental**    | IP54 (protección básica, IP67 en la muñeca)  | IP67 (protección completa contra polvo y agua) |
 | **Controlador**             | DX100 o DX200                                | IRC5                                         |
-| **Software**                | MotoSim, MotoPlus                            | RobotStudio, RAPID (lenguaje de programación de ABB) |
+| **Software**                | RoboDK, MotoSim, MotoPlus                    | RobotStudio, RAPID (lenguaje de programación de ABB) |
 | **Condiciones de trabajo**  | 0–45 °C, humedad sin condensación            | 5–45 °C, humedad hasta 95% sin condensación  |
 
